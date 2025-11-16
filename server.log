@@ -1,3 +1,8 @@
-{"level":"info","ts":1763254048.118,"caller":"server/main.go:41","msg":"Database connected successfully"}
-{"level":"info","ts":1763254048.11821,"caller":"server/main.go:63","msg":"Server starting","port":"8081","fixture_mode":false,"frontend_url":"http://localhost:5173"}
-{"level":"fatal","ts":1763254048.118337,"caller":"server/main.go:72","msg":"Server failed to start","error":"listen tcp :8081: bind: address already in use","stacktrace":"main.main\n\t/Users/val-kiel/Personal/affirm-name-repos/affirm-name-backend/backend/cmd/server/main.go:72\nruntime.main\n\t/opt/homebrew/Cellar/go/1.25.3/libexec/src/runtime/proc.go:285"}
+{"level":"info","ts":1763254932.4021251,"caller":"server/main.go:41","msg":"Database connected successfully"}
+{"level":"info","ts":1763254932.4023302,"caller":"server/main.go:63","msg":"Server starting","port":"8080","fixture_mode":false,"frontend_url":"http://localhost:5173"}
+{"level":"info","ts":1763254940.333424,"caller":"middleware/logging.go:40","msg":"HTTP request","method":"GET","path":"/api/names/trend","query":"name=Xyzzqwerty","status":404,"duration":0.022630792}
+{"level":"info","ts":1763254945.838997,"caller":"middleware/logging.go:40","msg":"HTTP request","method":"GET","path":"/api/names/trend","query":"","status":400,"duration":0.001342166}
+{"level":"info","ts":1763254951.588979,"caller":"middleware/logging.go:40","msg":"HTTP request","method":"GET","path":"/api/names/trend","query":"name=James&year_from=invalid","status":400,"duration":0.002799042}
+{"level":"info","ts":1763255054.9963698,"caller":"middleware/logging.go:40","msg":"HTTP request","method":"GET","path":"/api/names/trend","query":"name=James&countries=US","status":200,"duration":0.008104709}
+{"level":"info","ts":1763255173.216962,"caller":"middleware/logging.go:40","msg":"HTTP request","method":"GET","path":"/api/names/trend","query":"name=Alex","status":200,"duration":0.006779542}
+signal: killed
